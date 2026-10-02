@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Project Showcase</title>
+  <meta name="description" content="A modern showcase for Arduino, Robotics, IoT and Home Automation projects.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">⚡ Electro<span>Showcase</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-btn" href="#projects">Explore Projects</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">⚡ ELECTRONICS • ROBOTICS • IoT</div>
+        <h1>Build. Innovate.<br><span>Showcase.</span></h1>
+        <p>Explore creative electronic projects, smart automation ideas and robotics prototypes in one modern showcase.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#projects">View Projects →</a>
+          <a class="secondary" href="#about">Learn More</a>
+        </div>
+        <div class="stats">
+          <div><strong>12+</strong><small>Projects</small></div>
+          <div><strong>05</strong><small>Categories</small></div>
+          <div><strong>100%</strong><small>Creative</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="images/electronics-hero.svg" alt="Electronic circuit illustration">
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">FEATURED WORK</div>
+          <h2>Electronic Projects</h2>
+        </div>
+        <p>Ideas that connect hardware, software and real-world solutions.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="arduino">Arduino</button>
+        <button class="filter" data-filter="iot">IoT</button>
+        <button class="filter" data-filter="robotics">Robotics</button>
+        <button class="filter" data-filter="automation">Automation</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-category="arduino">
+          <img src="images/project-arduino.svg" alt="Arduino project">
+          <div class="card-body"><span>ARDUINO</span><h3>Smart Sensor Station</h3><p>Temperature, humidity and sensor monitoring with a compact controller.</p><a href="#" class="view-project" data-project="arduino">View Project →</a></div>
+        </article>
+        <article class="card" data-category="iot">
+          <img src="images/project-iot.svg" alt="IoT project">
+          <div class="card-body"><span>IoT</span><h3>Smart Home Control</h3><p>Connected lights and appliances controlled through a web interface.</p><a href="#" class="view-project" data-project="iot">View Project →</a></div>
+        </article>
+        <article class="card" data-category="robotics">
+          <img src="images/project-robot.svg" alt="Robotics project">
+          <div class="card-body"><span>ROBOTICS</span><h3>Obstacle Robot</h3><p>A mobile robot concept using distance sensing and motor control.</p><a href="#" class="view-project" data-project="robotics">View Project →</a></div>
+        </article>
+        <article class="card" data-category="automation">
+          <img src="images/project-home.svg" alt="Home automation project">
+          <div class="card-body"><span>AUTOMATION</span><h3>Home Automation</h3><p>Automate everyday devices with sensors, relays and a simple dashboard.</p><a href="#" class="view-project" data-project="automation">View Project →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <div class="eyebrow">ABOUT THE SHOWCASE</div>
+        <h2>Technology with a purpose.</h2>
+        <p>This website is a clean, responsive starting point for presenting student and personal electronics projects. Replace the sample cards with your own project images, descriptions and links.</p>
+      </div>
+      <div class="about-box">
+        <strong>HTML • CSS • JavaScript</strong>
+        <span>GitHub Pages ready</span>
+      </div>
+    </section>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+        <div class="modal-tag" id="modalTag">PROJECT</div>
+        <h2 id="modalTitle">Project</h2>
+        <p id="modalDescription"></p>
+        <div class="project-info-grid">
+          <div><strong>Technology</strong><span id="modalTech"></span></div>
+          <div><strong>Components</strong><span id="modalComponents"></span></div>
+          <div><strong>Features</strong><span id="modalFeatures"></span></div>
+          <div><strong>Use</strong><span id="modalUse"></span></div>
+        </div>
+        <h3>Project List</h3>
+        <ul class="modal-list" id="modalList"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Electronic Project Showcase · Built for innovation.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
